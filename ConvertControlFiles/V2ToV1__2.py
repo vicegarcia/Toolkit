@@ -24,7 +24,7 @@ class Downgrade:
             self.open_files(config('PATH_INPUT') + file)
 
     def open_files(self, path_file):
-        template = os.path.abspath(f'{self.rute}/template/temp2.json')
+        template = config('PATH_TEMPLATE')
         path = path_file
         self.creation_dictionaries(template, path)
 
